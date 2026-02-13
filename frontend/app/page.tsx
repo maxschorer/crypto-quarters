@@ -193,10 +193,12 @@ export default function Home() {
               <CardContent>
                 {/* US Map with Quarter Slots */}
                 <div className="relative w-full aspect-[1.6] bg-gradient-to-br from-blue-900/30 to-slate-900/50 rounded-xl border border-slate-700 overflow-hidden">
-                  {/* Background map image placeholder */}
-                  <div className="absolute inset-0 opacity-20 flex items-center justify-center">
-                    <span className="text-6xl">🗺️</span>
-                  </div>
+                  {/* Background US map */}
+                  <img 
+                    src="/us-map.svg" 
+                    alt="US Map" 
+                    className="absolute inset-0 w-full h-full object-contain opacity-30 p-4"
+                  />
                   
                   {/* Quarter slots */}
                   {STATES.map((state) => (
